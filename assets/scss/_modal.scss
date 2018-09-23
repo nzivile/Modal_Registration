@@ -43,7 +43,7 @@
     padding: 20px 20px 0 30px;
     position: relative;
   }
-  &--title{
+  &--title {
     font-size: 28px;
     color: #15498F;
     line-height: 34px;
@@ -51,20 +51,20 @@
     font-weight: 300;
     margin-bottom: 7px;
   }
-  &--subtitle{
+  &--subtitle {
     font-size: 13px;
     color: #333333;
     line-height: 18px;
     font-family: Open sans, sans-serif;
     font-weight: 400;
     padding-bottom: 15px;
-    &__blue{
+    &__blue {
       color: #15498F;
       padding-left: 26px;
       position: relative;
-      &::before{
+      &::before {
         content: "";
-        display:block;
+        display: block;
         width: 20px;
         height: 20px;
         background-image: url("../img/info.svg");
@@ -77,7 +77,7 @@
       }
     }
   }
-  &--close{
+  &--close {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -88,5 +88,73 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+  }
+  &--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &--content--left {
+    width: 275px;
+    height: 342px;
+    border-right: 1px #ddd solid;
+    display: flex;
+    flex-direction: column;
+    /**
+      scroller
+     */
+    .mCSB_inside > .mCSB_container {
+      margin-right: 0px;
+    }
+    .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+      background-color: #15498F !important;
+    }
+  }
+  &--clinic {
+    border-bottom: 1px #ddd solid;
+    padding: 20px 15px 20px 30px;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    &:hover {
+      background: rgba(21, 73, 143, 0.2);
+    }
+  }
+  &--clinic--title {
+    font-size: 16px;
+    color: #333333;
+    line-height: 22px;
+    font-family: Open sans, sans-serif;
+    font-weight: 700;
+    margin-bottom: 3px;
+    padding-left: 26px;
+    position: relative;
+    transition: 0.3s all ease-in;
+    &::before {
+      content: "";
+      display: block;
+      width: 11px;
+      height: 15px;
+      background-image: url("../img/location-pin.svg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+  }
+  &--clinic--subtitle {
+    font-size: 13px;
+    color: #333333;
+    line-height: 18px;
+    font-family: Open sans, sans-serif;
+    padding-left: 26px;
+  }
+
+  &--content--right {
+    width: 375px;
+    padding: 20px 20px 0 30px;
+
   }
 }
