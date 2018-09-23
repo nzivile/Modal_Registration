@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin-ext'); //adding font
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin-ext');
+//adding font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin-ext'); //adding font
 
 * {
   box-sizing: border-box;
 }
 
-html, body{
+html, body {
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 2px;
+  }
+  .mCSB_scrollTools {
+    width: 2px;
+  }
 }
 
